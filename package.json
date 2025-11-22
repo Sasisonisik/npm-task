@@ -1,0 +1,34 @@
+{
+  "name": "npm-task",
+  "version": "1.0.0",
+  "description": "",
+  "source": "./src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sasisonisik/npm-task.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sasisonisik/npm-task/issues"
+  },
+  "homepage": "https://github.com/Sasisonisik/npm-task#readme",
+  "dependencies": {
+    "parcel": "^2.16.1",
+    "posthtml-include": "^2.0.1"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.16.1"
+  },
+  "posthtml": {
+    "plugins": {
+      "posthtml-include": {
+        "root": "./src"
+      }
+    }
+  }
+}
